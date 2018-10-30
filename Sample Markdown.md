@@ -48,6 +48,10 @@ A steep roof is one that has a pitch of 12/12 or greater. In other words, if a r
 |--------|--------|--------|
 <img src="RoofSlopeLow03.png"> | <img src="RoofSlopeLow01.png"> | All roofs in image must be labeled
 
+| Oblique | Streetview | Description
+|--------|--------|--------|
+<img src="RoofSlopeEdgeCase01.png"> | <img src="RoofSlopeEdgeCase02.png"> | If available use streetview as a guide
+
 
 update
 
