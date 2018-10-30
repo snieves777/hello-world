@@ -29,4 +29,4 @@ For the rest of the instructions, we will use certain words with very specific m
 A roof is one that is completely flat. It has no pitch whatsoever.
 
 ### Low Roof
-A low roof is one that is not flat and has a pitch less than 12/12. Here’s a picture to give you an idea.
+A low roof is one that is not flat and has a pitch less than 12/12. Here’s a picture to give you an idea.  Use the reference image below to determine the slope of the roof.
