@@ -1,5 +1,20 @@
 # Roof Slope – Labeling Instructions
 
+## Overview
+
+In this task, you will label roof panels using the polygon tool. There are 3 distinct types of panels:
+
+class 1|class 2|class 3
+:-----:|:-----:|:-----:
+FLAT    | LOW | STEEP
+
+## Instructions
+
+1. Review the image to identify the roofs and pick a starting point.
+1. Zoom in to get a better view before drawing any polygons.
+1. Draw a separate polygon around **each roof panel**.
+1. Zoom out to check the image carefully for any missed roof panels.
+1. Lable around obstructions.
 
 ## Objective 
 Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
