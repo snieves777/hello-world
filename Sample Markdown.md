@@ -17,9 +17,6 @@ FLAT    | LOW | STEEP
 1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
 1. Label around obstructions.
 
-## Objective 
-
-
 ## Orientation
 <img src="labelbox-sample-image.png" width=600>
 
