@@ -12,14 +12,13 @@ FLAT    | LOW | STEEP
 
 1. Review the image to identify the roofs and pick a starting point.
 1. Zoom in to get a better view before drawing any polygons.
-1. Draw a separate polygon around **each roof panel**.
+1. Draw a separate polygon around **each roof panel** that are not Streetview.
 1. Zoom out to check the image carefully for any missed roof panels.
-1. Lable around obstructions.
-
-<img src="labelbox-sample-image.png">
+1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
+1. Label around obstructions.
 
 ## Objective 
-Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
+
 
 ## Orientation
 <img src="labelbox-sample-image.png" width=600>
