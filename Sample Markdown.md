@@ -32,3 +32,6 @@ A roof is one that is completely flat. It has no pitch whatsoever.
 A low roof is one that is not flat and has a pitch less than 12/12. Here’s a picture to give you an idea, use it as a guide to determine the slope of the roof.
 
 <img src="SlopeGuide.png">
+
+### Steep Roof
+A steep roof is one that has a pitch of 12/12 or greater. In other words, if a roof you’re looking at has an angle as steep or steeper than the picture above, classify it as steep. 
