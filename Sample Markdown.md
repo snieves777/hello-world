@@ -31,6 +31,7 @@ A steep roof is one that has a pitch of 12/12 or greater. In other words, if a r
 ## Instructions
 
 <img src="RoofSlopeLabeled.png">
+
 1. Review the image to identify the roofs and pick a starting point.
 1. Zoom in to get a better view before drawing any polygons.
 1. Draw a separate polygon around **each roof panel** that are not Streetview.
