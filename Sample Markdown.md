@@ -8,14 +8,6 @@ class 1|class 2|class 3
 :-----:|:-----:|:-----:
 FLAT    | LOW | STEEP
 
-## Instructions
-
-1. Review the image to identify the roofs and pick a starting point.
-1. Zoom in to get a better view before drawing any polygons.
-1. Draw a separate polygon around **each roof panel** that are not Streetview.
-1. Zoom out to check the image carefully for any missed roof panels.
-1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
-1. Label around obstructions.
 
 ## Orientation
 <img src="labelbox-sample-image.png" width=600>
@@ -35,3 +27,13 @@ A low roof is one that is not flat and has a pitch less than 12/12. Here’s a p
 
 ### Steep Roof
 A steep roof is one that has a pitch of 12/12 or greater. In other words, if a roof you’re looking at has an angle as steep or steeper than the picture above, classify it as steep. 
+
+## Instructions
+
+1. Review the image to identify the roofs and pick a starting point.
+1. Zoom in to get a better view before drawing any polygons.
+1. Draw a separate polygon around **each roof panel** that are not Streetview.
+1. Zoom out to check the image carefully for any missed roof panels.
+1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
+1. Label around obstructions.
+
