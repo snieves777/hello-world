@@ -38,5 +38,5 @@ A steep roof is one that has a pitch of 12/12 or greater. In other words, if a r
 1. Zoom out to check the image carefully for any missed roof panels.
 1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
 1. Label around obstructions.
-1. In the image above, the rightmost panel is of a Streetview, DON'T LABEL THE STREETVIEW.
+1. In the image above, the rightmost panel is of a Streetview, ***DON'T LABEL THE STREETVIEW.
 
