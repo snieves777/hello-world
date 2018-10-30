@@ -25,5 +25,5 @@ Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
 
 image | labeled
 :-----:|:-----:
-Labelbox will provide you with an image like the one above. This example shows the best-case scenario. There are four (oblique) images running from left to right that show the same houses from different directions. The rightmost image is a Google Streetview image. The Streetview image is provided as an additional resource to help you determine the roof slope. DO NOT LABEL THE STREETVIEW IMAGE. |<img src="labelbox-sample-image.png" >
+Labelbox will provide you with an image like the one above. This example shows the best-case scenario. There are four (oblique) images running from left to right that show the same houses from different directions. The rightmost image is a Google Streetview image. The Streetview image is provided as an additional resource to help you determine the roof slope. DO NOT LABEL THE STREETVIEW IMAGE. |<img src="labelbox-sample-image.png" width=1300 height=600 >
 
