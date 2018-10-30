@@ -21,6 +21,8 @@ Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
 
 ## Orientation
 
+
+<img src="labelbox-sample-image.png">
 <img src="labelbox-sample-image.png" width=1800 height=600>
 
 
