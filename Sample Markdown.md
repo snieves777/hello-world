@@ -21,3 +21,9 @@ FLAT    | LOW | STEEP
 <img src="labelbox-sample-image.png" width=600>
 
 Labelbox will provide you with an image like the one above. This example shows the best-case scenario. There are four (oblique) images running from left to right that show the same houses from different directions. The rightmost image is a Google Streetview image. The Streetview image is provided as an additional resource to help you determine the roof slope. DO NOT LABEL THE STREETVIEW IMAGE
+
+## Definitions
+For the rest of the instructions, we will use certain words with very specific meanings. Please read all definitions carefully!
+
+### Flat Roof
+A roof is one that is completely flat. It has no pitch whatsoever. 
