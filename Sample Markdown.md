@@ -53,6 +53,7 @@ A steep roof is one that has a pitch of 12/12 or greater. In other words, if a r
 <img src="RoofSlopeEdgeCase01.png"> | <img src="RoofSlopeEdgeCase02.png"> | If available use streetview as a guide, this is a low roof.
 <img src="RoofSlopeEdgeCase03.png"> | <img src="RoofSlopeEdgeCase04.png"> | Not all streetview images are helpful in determining slope.
 This is a steep roof.
+|<img src="RoofSlopeSteepEdgeCase01.png">|<img src="RoofSlopeSteepEdgeCase02.png">| The roof is mainly flat, there is a small portion of the roof that should be labeled as steep.
 
 update
 
