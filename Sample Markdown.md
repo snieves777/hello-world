@@ -26,4 +26,7 @@ Labelbox will provide you with an image like the one above. This example shows t
 For the rest of the instructions, we will use certain words with very specific meanings. Please read all definitions carefully!
 
 ### Flat Roof
-A roof is one that is completely flat. It has no pitch whatsoever. 
+A roof is one that is completely flat. It has no pitch whatsoever.
+
+### Low Roof
+A low roof is one that is not flat and has a pitch less than 12/12. Here’s a picture to give you an idea.
