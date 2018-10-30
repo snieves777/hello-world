@@ -37,8 +37,8 @@ A steep roof is one that has a pitch of 12/12 or greater. In other words, if a r
 1. Draw a separate polygon around **each roof panel** that are not Streetview.
 1. Zoom out to check the image carefully for any missed roof panels.
 1. Label each roof panel on every roof visible as either FLAT, LOW, or STEEP.
-1. If the roof is blocked by trees or other objects, draw a rough outline around them. Use a series of straight lines that roughly capture the actual roof. Notice the red oval in the picture below..
 1. In the image above, the rightmost panel is of a Streetview, **DON'T LABEL THE STREETVIEW PORTION OF THE IMAGE.**
+1. If the roof is blocked by trees or other objects, draw a rough outline around them. Use a series of straight lines that roughly capture the actual roof. Notice the red oval in the picture below.
 
 <img src="RoofSlopeRoughOutline.png">
 
