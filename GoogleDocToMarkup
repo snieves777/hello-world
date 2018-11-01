@@ -1,0 +1,15 @@
+<h1>Converting HTML to Markup</h1>
+<div>This is just a test document to determine what parts of HTML can be copied into GitHub repositories.</div>
+<div>&nbsp;</div>
+<div>Below is a sample table</div>
+<div>&nbsp;</div>
+<div>
+<table style="width: 275px; height: 53px;">
+<tbody>
+<tr>
+<td style="width: 67.88px;">&nbsp; Building&nbsp;</td>
+<td style="width: 191.12px;">Footprint center</td>
+</tr>
+</tbody>
+</table>
+</div>
