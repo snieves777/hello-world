@@ -1,9 +1,9 @@
 # Converting HTML to Markup
 This is just a test document to determine what parts of HTML can be copied into GitHub repositories.
-&nbsp;</div>
-<div>Below is a sample table</div>
-<div>&nbsp;</div>
-<div>
+
+Below is a sample table
+
+
 <table style="width: 275px; height: 53px;">
 <tbody>
 <tr>
