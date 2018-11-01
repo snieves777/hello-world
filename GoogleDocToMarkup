@@ -1,6 +1,6 @@
 # Converting HTML to Markup
-<div>This is just a test document to determine what parts of HTML can be copied into GitHub repositories.</div>
-<div>&nbsp;</div>
+This is just a test document to determine what parts of HTML can be copied into GitHub repositories.
+&nbsp;</div>
 <div>Below is a sample table</div>
 <div>&nbsp;</div>
 <div>
@@ -12,4 +12,3 @@
 </tr>
 </tbody>
 </table>
-</div>
