@@ -1,0 +1,990 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h2
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h3
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#434343;
+	font-weight:normal;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:#666666;
+	font-weight:normal;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	color:#666666;
+	font-weight:normal;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:16.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Overview</span></b></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>The objective
+of this task is to label <b>Residential</b>, <b>Commercial</b>, and <b>Industrial</b>
+properties by drawing a bounding box around the property. </span><span lang=EN
+style='font-family:"Arial",sans-serif'>Use your best judgment to select the
+class you believe to be true.&nbsp;</span><span style='font-family:"Arial",sans-serif'>All
+the buildings in an image need to be labelled. </span><span lang=EN
+style='font-family:"Arial",sans-serif'>A polygon with the wrong class is much
+better than no polygon at all.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:115%'><b><span style='font-size:14.0pt;
+line-height:115%;font-family:"Arial",sans-serif'>Instructions</span></b></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormalCxSpMiddle style='background:white'><span style='font-family:
+     "Arial",sans-serif'>Review all the buildings in the image.</span></li>
+ <li class=MsoNormal style='background:white'><span style='font-family:"Arial",sans-serif'>Zoom
+     in to get a better view&nbsp;before drawing any polygons.</span></li>
+ <li class=MsoNormal style='background:white'><span style='font-family:"Arial",sans-serif'>Use
+     the polygon tool to draw&nbsp;each bounding box separately.</span></li>
+ <li class=MsoNormal style='background:white'><span style='font-family:"Arial",sans-serif'>Zoom
+     out to check the image carefully for any missed properties.</span></li>
+</ol>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Class
+Definitions and Examples</span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'>Class</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.75pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'>Definition</span></p>
+  </td>
+  <td width=212 valign=top style='width:159.1pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'>Example Image</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Residential</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Single Family
+  House</span></p>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Multi Family
+  (includes):</span></p>
+  <p class=MsoListParagraph style='margin-left:56.55pt;text-indent:-13.55pt'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Townhouse</span></p>
+  <p class=MsoListParagraph style='margin-left:56.55pt;text-indent:-13.55pt'><span
+  style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Condo</span></p>
+  </td>
+  <td width=212 valign=top style='width:159.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'><img width=180 height=142
+  src="Building%20Classification%20Instructions-filtered_files/image001.jpg"></span></p>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Commercial</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Big office</span></p>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Small office</span></p>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Warehouse</span></p>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Stores</span></p>
+  </td>
+  <td width=212 valign=top style='width:159.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'><img width=184 height=180
+  src="Building%20Classification%20Instructions-filtered_files/image002.jpg"></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Industrial</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Power Plants</span></p>
+  <p class=MsoListParagraph style='margin-left:31.55pt;text-indent:-13.55pt'><span
+  style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-family:"Arial",sans-serif'>Manufacturing
+  Units</span></p>
+  </td>
+  <td width=212 valign=top style='width:159.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=190 height=160
+  src="Building%20Classification%20Instructions-filtered_files/image003.jpg"></span></p>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif;color:white'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Residential
+  OR Commercial</span></p>
+  </td>
+  <td width=421 colspan=2 valign=top style='width:315.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Select this
+  class if you are unable to distinguish between residential and commercial
+  properties or you think the property may belong to both classes. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Commercial OR
+  Industrial</span></p>
+  </td>
+  <td width=421 colspan=2 valign=top style='width:315.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Select this
+  class if you are unable to distinguish between commercial and industrial
+  properties or you think the property may belong to both classes.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=202 valign=top style='width:151.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>Not Sure</span></p>
+  </td>
+  <td width=421 colspan=2 valign=top style='width:315.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'>If you cannot
+  distinguish which class the property would fall under or it doesn’t meet any
+  of the requirements laid out below. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Detailed
+Class Examples/Features of Properties:</span></b></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>Residential</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Single Family </span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Most times there
+will only be one entrance/exit to the road</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Single Entity</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>You should see clear
+separation between two neighboring houses</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>There will typically
+only be 1 driveway (should not see multiple car parked in parallel)</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Should not be tall
+architecture (2 -3 stories should be fine)</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=295 valign=top style='width:221.6pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=289 height=286 id=image34.png
+  src="Building%20Classification%20Instructions-filtered_files/image004.jpg"></span></p>
+  </td>
+  <td width=328 valign=top style='width:245.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=322 height=286 id=image42.png
+  src="Building%20Classification%20Instructions-filtered_files/image005.jpg"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Multi Family </span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Should have multiple
+entry/exit to the road, look at the cars, parking spaces</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>The length of one
+side of the house would be 2 or 3 times longer than the other OR the building
+would have more height (Apartment building)</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>The roof may seem to
+be connected together</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=295 valign=top style='width:221.3pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=312 height=293 id=image16.png
+  src="Building%20Classification%20Instructions-filtered_files/image006.jpg"></span></p>
+  </td>
+  <td width=328 valign=top style='width:246.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=349 height=293 id=image40.png
+  src="Building%20Classification%20Instructions-filtered_files/image007.jpg"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=295 valign=top style='width:221.3pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=312 height=285 id=image39.png
+  src="Building%20Classification%20Instructions-filtered_files/image008.jpg"></span></p>
+  </td>
+  <td width=328 valign=top style='width:246.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=319 height=285 id=image41.png
+  src="Building%20Classification%20Instructions-filtered_files/image009.jpg"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>Commercial</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Warehouses, Small
+Offices, Large Offices, Stores</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Usually will have
+flat roofs</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Could be a
+multistory building covering a large area</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Look for Mall like
+structure, large stores</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Parking-lots are
+most likely seen at commercial properties</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:181.7pt'>
+  <td width=268 valign=top style='width:201.15pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:181.7pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=263 height=244 id=image24.png
+  src="Building%20Classification%20Instructions-filtered_files/image010.jpg"></span></p>
+  </td>
+  <td width=318 valign=top style='width:238.6pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:181.7pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=285 height=244 id=image19.png
+  src="Building%20Classification%20Instructions-filtered_files/image011.jpg"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>Industrial</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Power plants,
+Distribution Centers, Manufacturing units</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Property would
+occupy relatively big space in the image</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Not very tall, could
+be 2-3 stories </span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>You may not see lots
+of residential property nearby.</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Hydroelectric
+setting (may be near water: lake, river, sea), sometimes dams visible, frost on
+the water</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Transformer like
+structures, above ground electric grids</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Storage tanks, tall
+smoke towers visible</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Windmills</span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>If you see
+rail-lines, bodies of water, large trucks, or containers nearby, its more
+probable that these are industrial properties</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=309 valign=top style='width:231.7pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=288 height=241 id=image31.png
+  src="Building%20Classification%20Instructions-filtered_files/image012.jpg"></span></p>
+  </td>
+  <td width=314 valign=top style='width:235.8pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><img
+  width=300 height=241 id=image26.png
+  src="Building%20Classification%20Instructions-filtered_files/image013.jpg"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>How
+to distinguish classes</span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Commercial Vs
+Industry: </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>For most commercial
+property you can see quite a few residential properties nearby but the same
+might not apply to Industrial. An industrial property would more likely be
+situated far from residential property.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+color:black'>Commercial properties are most likely to be road side (So people
+can easily access them).</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Residential Vs
+Commercial:</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Most times
+residential properties would not have flat roof-top but have lots of visible
+edges. Look for garage, similar structure nearby. </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>If you see few
+buildings with similar structure in the image and are confused between
+Residential and commercial, it is more likely that the buildings are
+residential space</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-family:"Arial",sans-serif'>Other
+Instructions:</span></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif'>Don’t mark a
+separate bounding box around garage or very small structure if they are not
+connected to the property. If in case these small structures are connected to
+the property then include them in the bounding box</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:14.0pt;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;color:black'>Try to
+draw a tight bounding box. In case if a part of the property is obscured by a
+tree, but the property is obvious, extend the bounding box based on your
+intuition.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:14.0pt;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;color:black'>Try to
+get an intuition of the property from the neighborhood or from the whole image.
+The roof shape and neighborhood should give you a good intuition about the
+property/building type.</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial",sans-serif;color:black'>It is
+highly likely that industrial properties would consume most part of the image.
+Try to identify separate buildings in the industrial property and draw a
+bounding box around them.</span><span style='font-family:"Arial",sans-serif'><br>
+<br>
+<br>
+</span></p>
+
+<p class=MsoNormalCxSpMiddle><b><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Polygon
+Examples and Labeling Tips</span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormalCxSpMiddle style='color:black;background:white'><span
+     style='font-size:11.5pt;font-family:"Arial",sans-serif'>To draw a bounding
+     box, start by selecting one point on the image. As you move the mouse you
+     will see the box get larger. Click again to complete the shape. </span></li>
+ <li class=MsoNormal style='color:black;background:white'><span
+     style='font-size:11.5pt;font-family:"Arial",sans-serif'>To delete a
+     completed box, select and hit backspace. </span></li>
+</ul>
+
+<p class=MsoNormal style='background:white'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>Mark buildings separately. In an Industrial Property look for
+visible edges and draw separate bounding boxes. Mark “smoke towers” and “storage
+tanks” separately.</span></b></p>
+
+<p class=MsoListParagraph><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><img
+width=635 height=426 id="Picture 2"
+src="Building%20Classification%20Instructions-filtered_files/image014.gif"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><img
+width=624 height=429 id="Picture 1"
+src="Building%20Classification%20Instructions-filtered_files/image015.gif"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><img
+width=624 height=414 id="Picture 12"
+src="Building%20Classification%20Instructions-filtered_files/image016.gif"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>In an industrial property don’t mark very small building. For example,
+I have skipped the very small building near the electric grid.</span></b></p>
+
+<p class=MsoListParagraph><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><img
+width=500 height=332 id="Picture 15"
+src="Building%20Classification%20Instructions-filtered_files/image017.gif"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>If you see a building with a large exhaust or coolant, mark them
+separately in an industrial property.</span></b></p>
+
+<p class=MsoListParagraph><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=500 height=356 id="Picture 34"
+src="Building%20Classification%20Instructions-filtered_files/image018.gif"></span></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>This is a typical example. </span></b></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.5pt;font-family:Symbol'>Þ<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>Look for Roof top and property parcel (Space). </span></b></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.5pt;font-family:Symbol'>Þ<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>The buildings (in green) are industrial buildings. The presence of
+storage tank (bottom left) and the weird shape roof makes it obvious.</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.5pt;font-family:Symbol'>Þ<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>The center top property is marked “residential or commercial”
+because the roof top shape suggests residential but the property is situated
+near the lake and an industrial property. This is not a part of the industrial
+property because it is not in the same property space.</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.5pt;font-family:Symbol'>Þ<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>The buildings in Red have a clear separation from the industrial
+sector and the roof top suggest residential, so they are marked residential.</span></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><img
+width=624 height=396 id="Picture 6"
+src="Building%20Classification%20Instructions-filtered_files/image019.gif"></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>Skip images with no visible buildings. The images below look like
+a hydroelectricity generation plant, but there are no visible buildings skip
+such images.</span></b></p>
+
+<p class=MsoListParagraph><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><img width=542 height=366
+id="Picture 7"
+src="Building%20Classification%20Instructions-filtered_files/image020.gif"></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=571 height=376 id="Picture 14"
+src="Building%20Classification%20Instructions-filtered_files/image021.gif"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-.25in'><b><span style='font-size:
+11.5pt;font-family:"Arial",sans-serif;color:black'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>For some cases your intuition could easily say, if a building is
+garage or not. Look at the entrance to the building and look at the relative
+size with other buildings in the same property. This is not a very strict
+condition, but is completely based on your intuition.</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>Other Examples:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=624 height=459 id="Picture 16"
+src="Building%20Classification%20Instructions-filtered_files/image022.gif"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=624 height=444 id="Picture 33"
+src="Building%20Classification%20Instructions-filtered_files/image023.gif"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle><b><u><span style='font-size:14.0pt;font-family:
+"Arial",sans-serif'>Common Mistakes:</span></u></b></p>
+
+<p class=MsoNormalCxSpMiddle><b><u><span style='font-size:14.0pt;font-family:
+"Arial",sans-serif'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>The
+image on the left only has 29 labels while the image on the right has 47. If
+you look at the entrance, even though the houses are joint, roof separation is
+visible and there are different entrance paths for each house. </span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=286 height=216 id="Picture 4"
+src="Building%20Classification%20Instructions-filtered_files/image024.gif"><img
+width=316 height=219 id="Picture 10"
+src="Building%20Classification%20Instructions-filtered_files/image025.gif"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>Only
+mark the building. </span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=301 height=220 id="Picture 17"
+src="Building%20Classification%20Instructions-filtered_files/image026.gif"><img
+width=293 height=209 id="Picture 22"
+src="Building%20Classification%20Instructions-filtered_files/image027.gif"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>Don’t
+include the Pool and the pool side house in the same building bounding box. </span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=299 height=218 id="Picture 26"
+src="Building%20Classification%20Instructions-filtered_files/image028.gif"><img
+width=302 height=214 id="Picture 27"
+src="Building%20Classification%20Instructions-filtered_files/image029.gif"></span></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>Look
+at the roof top, if there is a clear separation, then separate bounding boxes
+for each. Zoom in and zoom out to get a clear view. </span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=297 height=225 id="Picture 28"
+src="Building%20Classification%20Instructions-filtered_files/image030.gif"><img
+width=315 height=242 id="Picture 29"
+src="Building%20Classification%20Instructions-filtered_files/image031.gif"></span></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>Only
+mark the relevant buildings (warehouse, storage tanks, smoke towers, exhausts)
+in an industrial area. Avoid marking all small buildings in an industrial area.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=300 height=230 id="Picture 30"
+src="Building%20Classification%20Instructions-filtered_files/image032.gif"><img
+width=320 height=245 id="Picture 32"
+src="Building%20Classification%20Instructions-filtered_files/image033.gif"></span></b></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormalCxSpMiddle><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Left
+Wrong </span><span style='font-size:14.0pt;font-family:Wingdings'>è</span><span
+style='font-size:14.0pt;font-family:"Arial",sans-serif'> Right Correct:</span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif'>Mark
+only relevant buildings.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:black'><img width=298 height=223 id="Picture 35"
+src="Building%20Classification%20Instructions-filtered_files/image034.gif"><img
+width=318 height=236 id="Picture 36"
+src="Building%20Classification%20Instructions-filtered_files/image035.gif"></span></b></p>
+
+</div>
+
+</body>
+
+</html>
